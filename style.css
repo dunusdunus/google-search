@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30vh;
+}
+
+.input-wrapper input{
+    width: 590px;
+    height: 48px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-left: 45px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.lens-icon {
+    right: 15px;
+    cursor: pointer;
+}
+
+.googlemic-icon {
+    right: 55px;
+    cursor: pointer;
+}
+
+.input-wrapper .search-icon {
+    width: 18px;
+    left: 15px;
+}
+
+.input-wrapper img{
+    width: 24px;
+    position: absolute;
+}
+
+.input-wrapper input:hover {
+    box-shadow: 0px 0px 6px 1px rgba(34, 60, 80, 0.2);
+}
+
+.links {
+    display: flex;
+    gap: 13px;
+}
+
+.links a {
+    font-size: 14px;
+    background-color: #f8f9fa;
+    padding: 9px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #3c4043;
+}
+
+.links a:focus {
+    border: 0.5px solid rgb(95, 95, 255);
+}
+
+.links a:hover {
+    box-shadow: 0px 0px 2px 1px rgba(34, 60, 80, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+    .input-wrapper {
+        max-width: 390px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .input-wrapper {
+        max-width: 290px;
+    }
+    .input input::placeholder {
+        color: white;
+    }
+}
